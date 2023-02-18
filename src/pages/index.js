@@ -50,7 +50,7 @@ const descriptions = [
   return (
     <div className=' w-screen h-screen '>
        <header classname=" top-0 p-5 flex flex-row max-w-7xl mx-auto z-20 justify-center items-center align-middle">
-        <div className='flex p-5 items-center '>
+        <div className='flex p-5 items-center justify-left md:justify-center '>
             <img 
               src="https://personal-website-2022.s3.us-west-2.amazonaws.com/Screen_Shot_2023-02-18_at_1.43.21_PM-removebg-preview+(1).png"
               className='w-[70px] h-[70px] flex'

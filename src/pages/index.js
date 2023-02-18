@@ -17,27 +17,11 @@ export default function Home() {
   
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(phone)
-    const data = {
-      records: [
-        {
-          fields: {
-            Name: phone,
-          },
-        },
-      ],
-    };
+
+    const url = `https://3797-98-33-100-230.ngrok.io//conversation?Number=${phone}`;
+
     try {
-      const response = await axios.post(
-        `https://api.airtable.com/v0/app8OPfKOwre37OSg/teams`,
-        data,
-        {
-          headers: {
-            Authorization: `Bearer keyiBU3kbqq2MMpOC`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await axios.get(url);
       console.log(response.data);
       setPhone("");
     } catch (error) {
@@ -66,9 +50,16 @@ const descriptions = [
   return (
     <div className=' w-screen h-screen '>
        <header classname=" top-0 p-5 flex flex-row max-w-7xl mx-auto z-20 justify-center items-center align-middle">
-            <h1 className='font-bold font-inter ml-[5%] p-5 text-[20px]'>
+        <div className='flex p-5 items-center '>
+            <img 
+              src="https://personal-website-2022.s3.us-west-2.amazonaws.com/Screen_Shot_2023-02-18_at_1.43.21_PM-removebg-preview+(1).png"
+              className='w-[70px] h-[70px] flex'
+            />
+            
+            <h1 className='font-bold font-inter flex text-[20px]'>
                 AfterAware
             </h1>
+          </div>
       </header>
 
       <div className="w-full h-full align-middle md:mt-[10%]  mt-[30%] flex">

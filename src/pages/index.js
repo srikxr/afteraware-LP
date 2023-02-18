@@ -74,7 +74,7 @@ const descriptions = [
       <div className="w-full h-full align-middle md:mt-[10%]  mt-[30%] flex">
             
             <div className="w-[80%] md:w-[70%] mx-auto align-middle flex flex-col">
-              <h1 className="font-bold text-[#3375F2] md:text-[60px] text-[40px] items-left  lg:justify-left md:justify-left justify-left  md:text-center text-left flex z-0  content-left md:leading-[65px] leading-[45px]">
+              <h1 className="font-bold text-[#3375F2] drop-shadow-lg md:text-[60px] text-[40px] items-left  lg:justify-left md:justify-left justify-left  md:text-center text-left flex z-0  content-left md:leading-[65px] leading-[45px]">
                  Streamline medical aftercare with easy text check-ins.
               </h1>
               <p className=" mt-[3%]  md:justify-center justify-center lg:text-center md:text-center text-left font-Amiri font-regular md:items-center  lg:text-[20px] md:text-[10px] text-[15px]">
@@ -102,11 +102,11 @@ const descriptions = [
 
           <div className='mt-[5%] text-left md:text-center md:items-center md:justify-center '>
             <img 
-              src="https://personal-website-2022.s3.us-west-2.amazonaws.com/AfterAware+mock.png"
-              className='w-[100%] h-[40%] md:w-[75%] md:h-[50%] drop-shadow-xl invisible md:visible align-middle mx-auto'
+              src="https://personal-website-2022.s3.us-west-2.amazonaws.com/AfterAwareMockFront.png"
+              className='w-[100%] h-[300px] md:w-[100%] md:h-[50%] drop-shadow-xl hidden md:flex  align-middle mx-auto'
             />
             <div className=''>
-              <h1 className='text-[25px] font-semibold md:text-[40px] mt-[5%] drop-shadow-xl'>
+              <h1 className='text-[25px] font-semibold md:text-[40px] mt-[15%] md:mt-[5%] drop-shadow-xl'>
               Maximize Your Health Recovery With Our Workflow Solutions.
               </h1>
             </div>

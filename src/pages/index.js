@@ -21,7 +21,7 @@ export default function Home() {
     const url = `https://3797-98-33-100-230.ngrok.io//conversation?Number=${phone}`;
 
     try {
-      const response = await axios.get(url);
+      const response = await axios.post(url);
       console.log(response.data);
       setPhone("");
     } catch (error) {
@@ -66,7 +66,7 @@ const descriptions = [
             
             <div className="w-[80%] md:w-[70%] mx-auto align-middle flex flex-col">
               <h1 className="font-bold text-[#3375F2] drop-shadow-lg md:text-[60px] text-[40px] items-left  lg:justify-left md:justify-left justify-left  md:text-center text-left flex z-0  content-left md:leading-[65px] leading-[45px]">
-                 Streamline medical aftercare with easy text check-ins.
+                 Streamline post-operational aftercare with easy text check-ins.
               </h1>
               <p className=" mt-[3%]  md:justify-center justify-center lg:text-center md:text-center text-left font-Amiri font-regular md:items-center  lg:text-[20px] md:text-[10px] text-[15px]">
                 Seamlessly connect with your healthcare provider for a streamlined experience.
